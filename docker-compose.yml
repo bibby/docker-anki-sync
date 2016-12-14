@@ -1,0 +1,12 @@
+---
+
+anki:
+  image: anki
+  container_name: anki
+  environment:
+    ANKI_USER: ${ANKI_USER:-}
+    ANKI_PASSWORD: ${ANKI_PASSWORD:-}
+  volumes:
+    - '/opt/volumes/anki:/etc/ankisyncd'
+  ports:
+    - '27701:27701'
