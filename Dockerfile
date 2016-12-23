@@ -5,7 +5,7 @@ RUN pip install -U pip
 RUN pip install envtpl webob simplejson eventlet
 
 WORKDIR /usr/src
-RUN git clone https://github.com/jdoe0/ankisyncd
+RUN git clone https://github.com/bibby/ankisyncd
 WORKDIR /usr/src/ankisyncd
 RUN git checkout ndl-patches
 RUN git reset --hard c398ccdb
